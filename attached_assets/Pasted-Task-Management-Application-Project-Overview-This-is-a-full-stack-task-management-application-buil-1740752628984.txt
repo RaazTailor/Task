@@ -1,0 +1,70 @@
+Task Management Application
+Project Overview
+This is a full-stack task management application built with:
+
+Frontend: React with TypeScript, Vite, and Shadcn UI components
+Backend: Express.js with TypeScript
+Data validation: Zod schema validation
+Styling: Tailwind CSS
+Application Structure
+Backend (Server)
+Express server running on port 5000
+RESTful API with routes prefixed with /api
+Task management with CRUD operations
+Storage interface for data persistence
+Request logging middleware
+Frontend (Client)
+React-based UI with modern components
+Form validation using Zod schemas
+Navigation component for routing
+Task sidebar for task organization
+Task cards with completion checkboxes
+Features
+Create, read, update, and delete tasks
+Categorize tasks by JLPT levels (N1-N5)
+Mark tasks as completed
+Filter and organize tasks
+Date-based organization
+Data Model
+Tasks have the following properties:
+
+id: Unique identifier
+title: Task description
+completed: Boolean status
+category: JLPT level (N1-N5)
+date: Due date as ISO string
+createdAt: Timestamp when created
+Development Steps
+Project Setup
+
+Initialize the project with Vite and TypeScript
+Configure Express server with TypeScript
+Set up Tailwind CSS and Shadcn UI components
+Backend Development
+
+Create Express server with middleware for logging and error handling
+Implement storage interface for data persistence
+Define API routes for task CRUD operations
+Implement request validation using Zod schemas
+Frontend Development
+
+Create React components for UI
+Implement navigation and routing
+Design task creation and editing forms
+Build task listing and filtering functionality
+Integration
+
+Connect frontend to backend API
+Implement data fetching and state management
+Add error handling and loading states
+Styling and UI
+
+Apply Tailwind CSS for responsive design
+Use Shadcn UI components for consistent styling
+Customize theme according to preferences
+Testing and Debugging
+
+Test API endpoints
+Debug UI rendering issues
+Fix validation errors and edge cases
+The application appears to be a task management system designed specifically for Japanese language learners, with tasks categorized by JLPT levels (N1-N5), which are standardized Japanese language proficiency test levels.
