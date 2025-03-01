@@ -34,10 +34,10 @@ export function TaskList() {
       <div className="flex justify-end">
         <Select value={filter} onValueChange={setFilter}>
           <SelectTrigger className="w-[180px]">
-            <SelectValue placeholder="Filter tasks" />
+            <SelectValue placeholder="Filter schedule" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="all">All Tasks</SelectItem>
+            <SelectItem value="all">All Schedule</SelectItem>
             <SelectItem value="completed">Completed</SelectItem>
             <SelectItem value="incomplete">Incomplete</SelectItem>
             {jlptLevels.map((level) => (
