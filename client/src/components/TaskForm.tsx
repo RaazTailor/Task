@@ -83,14 +83,14 @@ export function TaskForm() {
           name="category"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>JLPT Level</FormLabel>
+              <FormLabel>F5s</FormLabel>
               <Select
                 onValueChange={field.onChange}
                 defaultValue={field.value}
               >
                 <FormControl>
                   <SelectTrigger>
-                    <SelectValue placeholder="Select JLPT level" />
+                    <SelectValue placeholder="Select F5s level" />
                   </SelectTrigger>
                 </FormControl>
                 <SelectContent>

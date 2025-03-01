@@ -42,7 +42,7 @@ export function TaskList() {
             <SelectItem value="incomplete">Incomplete</SelectItem>
             {jlptLevels.map((level) => (
               <SelectItem key={level} value={level}>
-                {level} Tasks
+                {level} Schedule
               </SelectItem>
             ))}
           </SelectContent>

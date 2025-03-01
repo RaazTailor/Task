@@ -2,7 +2,7 @@ import { pgTable, text, serial, timestamp, boolean } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
-export const jlptLevels = ["N1", "N2", "N3", "N4", "N5"] as const;
+export const jlptLevels = ["N1", "N2", "N3", "N4", "N5"] as const; // F5s levels
 
 export const tasks = pgTable("tasks", {
   id: serial("id").primaryKey(),
