@@ -9,7 +9,7 @@ export default function Home() {
         <div>
           <Card>
             <CardHeader>
-              <CardTitle>Create New Schedule</CardTitle>
+              <CardTitle>Create New Task</CardTitle>
             </CardHeader>
             <CardContent>
               <TaskForm />
@@ -20,7 +20,7 @@ export default function Home() {
         <div>
           <Card>
             <CardHeader>
-              <CardTitle>Schedule</CardTitle>
+              <CardTitle>JLPT Study Tasks</CardTitle>
             </CardHeader>
             <CardContent>
               <TaskList />
