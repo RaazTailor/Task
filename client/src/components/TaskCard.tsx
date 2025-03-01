@@ -15,12 +15,6 @@ const levelColors = {
   N5: "bg-purple-100 text-purple-800",
 };
 
-// Audio elements for different states
-const playSound = (state: 'will' | 'can' | 'done') => {
-  const audio = new Audio(`/sounds/${state}.mp3`);
-  audio.play().catch(console.error);
-};
-
 interface TaskCardProps {
   task: Task;
 }
@@ -36,10 +30,6 @@ export function TaskCard({ task }: TaskCardProps) {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["/api/tasks"] });
-      // Play sound when task is completed
-      if (!task.completed) {
-        playSound('done');
-      }
     },
   });
 
@@ -66,10 +56,7 @@ export function TaskCard({ task }: TaskCardProps) {
               onCheckedChange={() => toggleMutation.mutate()}
               disabled={toggleMutation.isPending}
             />
-            <div 
-              className="flex-1 min-w-0 cursor-pointer" 
-              onClick={() => playSound(task.completed ? 'done' : 'can')}
-            >
+            <div className="flex-1 min-w-0">
               <h3
                 className={cn(
                   "font-medium truncate",
