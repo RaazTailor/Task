@@ -20,7 +20,7 @@ export default function Home() {
         <div>
           <Card>
             <CardHeader>
-              <CardTitle>Alnnasiru</CardTitle>
+              <CardTitle>Alnasiru-aims</CardTitle>
             </CardHeader>
             <CardContent>
               <TaskList />
