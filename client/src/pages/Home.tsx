@@ -16,11 +16,11 @@ export default function Home() {
             </CardContent>
           </Card>
         </div>
-        
+
         <div>
           <Card>
             <CardHeader>
-              <CardTitle>JLPT Study Tasks</CardTitle>
+              <CardTitle>Alnnasiru</CardTitle>
             </CardHeader>
             <CardContent>
               <TaskList />
